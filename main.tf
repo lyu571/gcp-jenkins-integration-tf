@@ -11,7 +11,7 @@ resource "tencentcloud_vpc" "main" {
   cidr_block = var.vpc_cidr_block
 }
 
-resource "tencentcloud_subnet" "main" { ###
+resource "tencentcloud_subnet" "main" { ####
   name              = "my_subnet"
   availability_zone = var.availability_zone
   vpc_id            = tencentcloud_vpc.main.id
